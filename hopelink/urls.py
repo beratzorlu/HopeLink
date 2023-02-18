@@ -23,4 +23,5 @@ urlpatterns = [
     path('', include('home.urls')),
     path('blog/', include('blog.urls')),
     path('ngo/', include('ngo.urls')),
+    path('accounts/', include('allauth.urls')),
 ]
