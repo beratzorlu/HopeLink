@@ -11,13 +11,11 @@
             <h1 class="text-clear home-pg-text text-center">
                 Blog
             </h1>
-            {% if request.user|has_group:"site_admin" %}
                 <div>
-                    <a class="btn rounded-0" href="{% url 'add_blog' %}">
+                    <a class="btn rounded-0" href="#">
                         <button class="btn rounded-3 btn-black" type="button">Add a blog</button>
                     </a>
                 </div>
-            {% endif %}
             <div class="container">
                 <div class="row">
                 <div class="col-12">
@@ -27,12 +25,10 @@
                         <p class="card-body text-left">{{blog.body}}</p>
                         <div class="card-footer">
                             <p> {{ blog.added_on }}</p>
-                        {% if request.user|has_group:"site_admin" %}
                             <small class="ml-3">
-                                <a class="btn btn-black" href="{% url 'edit_blog' blog.id %}">Edit</a> 
-                                <a class="btn btn-danger" href="{% url 'delete_blog' blog.id %}">Delete</a>
+                                <a class="btn btn-black" href="#">Edit</a> 
+                                <a class="btn btn-danger" href="#">Delete</a>
                             </small>
-                        {% endif %}
                         </div>
                     </div>
                     {% endfor %}
