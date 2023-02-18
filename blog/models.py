@@ -11,7 +11,7 @@ class Blog(models.Model):
     added_on = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-            ordering = ['-added_on']
+        ordering = ['-added_on']
 
     def __str__(self):
         return self.title
