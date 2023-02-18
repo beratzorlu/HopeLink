@@ -18,3 +18,9 @@ def blog(request):
     }
 
     return render(request, template, context)
+
+def add_blog(request):
+    """
+    veiw to add a blog post
+    """
+    
