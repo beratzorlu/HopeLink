@@ -1,3 +1,29 @@
 body {
     background-color: #B4B8AB;
 }
+
+.card-title {
+    margin: 15px 0 15px 0;
+    text-transform: capitalize;
+}
+
+.card {
+    margin-bottom: 4rem;
+    background-color: #F4F9E9;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.date-right {
+    margin-right: 10px;
+}
+
+.btn-margin {
+    margin-bottom: 15px;
+}
