@@ -1,0 +1,35 @@
+body {
+    background-color: #b4b8ab;
+}
+
+/* Navbar */
+
+nav {
+    background-color: #153243;
+}
+
+h1 {
+    color: #b4b8ab;
+}
+
+nav a {
+    color: #f4f9e9;
+}
+
+button {
+    color:#f4f9e9;
+}
+
+/* Footer */
+
+footer {
+    background-color: #153243;
+    color: #f4f9e9;
+}
+
+/* home page */
+
+.hero-image {
+	position: relative;
+	overflow: hidden;
+}
