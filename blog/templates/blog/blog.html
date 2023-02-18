@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+{% block content %}
+ 
+<div class="container h-100 text-center">
+    <div class="row h-100">
+        <div class="col mt-5">
+            <h1 class="text-clear home-pg-text text-center">
+                Blog
+            </h1>
+                <div>
+                    <a class="btn rounded-0" href="#">
+                        <button class="btn rounded-3 btn-black" type="button">Add a blog</button>
+                    </a>
+                </div>
+            <div class="container">
+                <div class="row">
+                <div class="col-12">
+                    {% for blog in blog %}
+                    <div class="card w-100">
+                        <h2 class="card-title">{{ blog.title }}</h2>
+                        <p class="card-body text-left">{{blog.body}}</p>
+                        <div class="card-footer">
+                            <p> {{ blog.added_on }}</p>
+                            <small class="ml-3">
+                                <a class="btn btn-black" href="#">Edit</a> 
+                                <a class="btn btn-danger" href="#">Delete</a>
+                            </small>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
