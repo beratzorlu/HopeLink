@@ -28,6 +28,8 @@ button {
 footer {
     background-color: #153243;
     color: #f4f9e9;
+    position: relative;
+    bottom: 0;
 }
 
 /* home page */
