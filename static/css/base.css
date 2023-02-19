@@ -113,3 +113,7 @@ p {
     max-width: 90%;
     margin: auto;
 }
+
+.footer-margin {
+    margin-right: 2rem;
+}
