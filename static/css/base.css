@@ -99,3 +99,12 @@ p {
 .message-hl:hover {
     transform: scale(1.15);
 }
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #153243;
+    border-color: #153243;
+}
+.message-hl:hover {
+    transform: scale(1.15);
+}
