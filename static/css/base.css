@@ -42,7 +42,6 @@ footer {
 }
 
 .jumbotron {
-    margin: 20px;
     text-align: center;
     background: url("/static/images/group.jpg") no-repeat center center;
     background-size: cover;
@@ -54,7 +53,8 @@ p {
 }
 
 .text-holder {
-    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
     width: fit-content;
     height: fit-content;
     padding: 20px;
@@ -107,4 +107,13 @@ p {
 }
 .message-hl:hover {
     transform: scale(1.15);
+}
+
+.max-width-90 {
+    max-width: 90%;
+    margin: auto;
+}
+
+.footer-margin {
+    margin-right: 2rem;
 }
