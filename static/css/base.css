@@ -1,5 +1,8 @@
 body {
     background-color: #b4b8ab;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Navbar */
@@ -17,7 +20,7 @@ nav a {
 }
 
 button {
-    color:#f4f9e9;
+    color: #f4f9e9;
 }
 
 /* Footer */
@@ -25,11 +28,46 @@ button {
 footer {
     background-color: #153243;
     color: #f4f9e9;
+    position: relative;
+    bottom: 0;
 }
 
 /* home page */
 
-.hero-image {
-	position: relative;
-	overflow: hidden;
+.heading {
+    font-size: 4rem;
+    color: #153243;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+.jumbotron {
+    margin: 20px;
+    text-align: center;
+    background: url("/static/images/group.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.text-holder {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #284b63;
+    border-color: #284b63;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #153243;
+    border-color: #153243;
 }
