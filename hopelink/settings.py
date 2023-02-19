@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'ngo',
     'cloudinary_storage',
     'cloudinary',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -65,6 +66,8 @@ MIDDLEWARE = [
 SITE_ID = 1
 
 ROOT_URLCONF = 'hopelink.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
