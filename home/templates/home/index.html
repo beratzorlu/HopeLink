@@ -21,6 +21,15 @@
 </div>
 
 <!-- Our Purpose Section -->
+<section class="max-width-90 sliding-images">
+    <div class="row">
+        <img src="../../../static/images/hugging-1.jpg" class="col-sm-6 splash-image myImages fade-in" alt="">
+        <img src="../../../static/images/evac.jpg" class="col-sm-6 splash-image myImages fade-in" alt="">
+        <h2 class="col-sm-6 heading-2">Looking for a close friend or family member?<br><a href="{% url 'blog' %}">Check
+                out our blog</a>
+        </h2>
+    </div>
+</section>
 <section class="max-width-90">
     <div>
         <p>NGO activities include, but are not limited to, environmental, social, advocacy and human rights work. They
@@ -28,5 +37,22 @@
             in developing society, improving communities, and promoting citizen participation.</p>
     </div>
 </section>
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("myImages");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 6300);
+    }
+</script>
 
 {% endblock %}
