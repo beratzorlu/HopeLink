@@ -91,6 +91,15 @@ p {
     margin-bottom: 100px;
 }
 
+.fade-in {
+    animation: fadeIn 7s;
+}
+
+@keyframes fadeIn {
+    0%,100% {opacity: 0;}
+    50% {opacity: 1;}
+}
+
 /* Blog page */
 
 .card-heading-hl {
