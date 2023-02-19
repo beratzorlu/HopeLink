@@ -52,10 +52,12 @@ INSTALLED_APPS = [
     'home',
     'blog',
     'ngo',
+    'profiles',
     'cloudinary_storage',
     'cloudinary',
     'crispy_forms',
     'crispy_bootstrap4',
+    'django_countries',
 ]
 
 MIDDLEWARE = [
@@ -108,7 +110,7 @@ AUTHENTICATION_BACKENDS = [
 
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = 'profile'
 
 WSGI_APPLICATION = 'hopelink.wsgi.application'
 
@@ -142,7 +144,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-CSRF_TRUSTED_ORIGINS=['https://8000-beratzorlu-hopelink-ljylb547uem.ws-eu87.gitpod.io']
+CSRF_TRUSTED_ORIGINS=['https://8000-beratzorlu-hopelink-u1b2yuyow99.ws-eu87.gitpod.io']
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/

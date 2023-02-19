@@ -4,6 +4,25 @@ body {
     display: flex;
     flex-direction: column;
 }
+/* -----------------------scrollbar styling */
+::-webkit-scrollbar {
+    width: .7vw;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #774b12;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #be7c26;
+}
+
 
 /* Navbar */
 
@@ -107,4 +126,61 @@ p {
 }
 .message-hl:hover {
     transform: scale(1.15);
+}
+
+/* ------------------------------profile and menu styling */
+.menu {
+    height: 100vh;
+    position: relative;
+}
+
+.article-box {
+    height: 100vh;
+    overflow: auto;
+}
+
+.profile-card {
+    width: 100% !important;
+    /* height: 100% !important; */
+    position: absolute;
+    bottom: 10%;
+}
+
+.profile-box {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 7px solid #fff
+}
+
+.profile-pic {
+    height: 100%;
+    width: 100%;
+}
+
+.profile-edit {
+    position: absolute;
+    bottom: 5px;
+    left: 6px;
+}
+
+/*  user follow-unfollow */
+.follow-unfollow {
+    color: hsl(0, 81%, 35%)
+}
+
+/* ---------------media styling for screen size mobile  */
+
+@media (max-width: 991px) {
+    .profile {
+        height: 150px;
+        width: 150px;
+    }
+    .menu-txt{
+        display: none;
+    }
+    .menu-txt-box{
+        justify-content: center !important;
+    }
 }
