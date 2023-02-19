@@ -11,11 +11,13 @@
             <h1 class="text-clear home-pg-text text-center">
                 Noticeboard
             </h1>
+            {% if request.user|has_group:"site_admin" %}
             <div class="btn-margin-hl">
-                <a class="btn rounded-0" href="#">
-                    <button class="btn rounded-3 btn-success" type="button">+ Add a blog</button>
+                <a class="btn rounded-0 btn-success" href="{% url 'add_blog' %}">
+                    Add a blog
                 </a>
             </div>
+            {% endif %}
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -23,9 +25,9 @@
                         <div class="card w-100 message-hl card-main-hl">
                             <h2 class="card-title">{{ blog.title }}</h2>
                             <hr>
-                            <p class="card-body card-heading-hl text-left">{{blog.body}}</p>
-                            <p class="text-right date-right margin-right-hl">~ {{ blog.added_on }}</p>
+                            <p class="card-body text-left card-heading-hl">{{blog.body}}</p>
                             <div class="card-footer">
+                                <p> {{ blog.added_on }}</p>
                                 <small class="ml-3">
                                     <a class="btn btn-info left" href="#">Edit</a>
                                     <a class="btn btn-danger right" href="#">Delete</a>

@@ -3,16 +3,29 @@
 
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">hopelink</h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="#" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">search ngo's now</a>
-                    </h4>
-                </div>
-            </div>
-        </div>
+
+<div class="jumbotron">
+    <div class="text-holder">
+        <h1 class="display-4 heading">HopeLink</h1>
+        <br>
+        <p>We believe that positive change is possible when people come together to create a better world.
+            We
+            invite you to join our movement by learning about the work of NGO's, getting involved and supporting the
+            causes
+            you care about.</p>
+        <br>
+        <p>Together, we can make a difference and build a brighter future for all of us!</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'account_login' %}" role="button">Sign Up | Login</a>
     </div>
+</div>
+
+<!-- Our Purpose Section -->
+<section>
+    <div>
+        <p>NGO activities include, but are not limited to, environmental, social, advocacy and human rights work. They
+            can work to promote social or political change on a broad scale or very locally. NGOs play a critical part
+            in developing society, improving communities, and promoting citizen participation.</p>
+    </div>
+</section>
+
 {% endblock %}

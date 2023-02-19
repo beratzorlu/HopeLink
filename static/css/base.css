@@ -1,5 +1,69 @@
 body {
-    background-color: #B4B8AB;
+    background-color: #b4b8ab;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+
+nav {
+    background-color: #153243;
+}
+
+h1 {
+    color: #b4b8ab;
+}
+
+nav a {
+    color: #f4f9e9;
+}
+
+button {
+    color: #f4f9e9;
+}
+
+/* Footer */
+
+footer {
+    background-color: #153243;
+    color: #f4f9e9;
+    position: relative;
+    bottom: 0;
+}
+
+/* home page */
+
+.heading {
+    font-size: 4rem;
+    color: #153243;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+.jumbotron {
+    margin: 20px;
+    text-align: center;
+    background: url("/static/images/group.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.text-holder {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #284b63;
+    border-color: #284b63;
 }
 
 .card-heading-hl {

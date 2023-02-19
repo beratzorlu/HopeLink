@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+                <h2>Edit Blog</h2>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row p-2">
+            <div class="col">
+                <form method="POST" action="{% url 'edit_blog' blog.id %}" enctype="multipart/form-data ">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div>
+                        <a class="btn rounded-3" href="{% url 'blog' %}">Cancel</a>
+                        <button class="btn btn-success rounded-3" type="submit">Edit Product</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
