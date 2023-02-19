@@ -75,6 +75,21 @@ p {
     border-color: #284b63;
 }
 
+.splash-image {
+    border-radius: 40px;
+}
+
+.heading-2 {
+    text-align: center;
+    margin: auto;
+    min-width: 50%;
+}
+
+.sliding-images {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 /* Blog page */
 
 .card-heading-hl {
