@@ -11,9 +11,66 @@
         </div>
         <div class="col-sm-12 col-md-9 article-box bg-dark">
             <div class="row">
+                {% if from_search %}
                 <div class="col-12 col-md-8 bg-info">
-                    Level 2: .col-8 .col-sm-6
+                    <h5 class="mt-4">Search Results for "{{ query }}"</h5>
+                    {% if profile_results %}
+                    {% for profile in profile_results %}
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-4">
+                                {% if placeholder in profile.image.url %}
+                                <img class="img-fluid rounded-start" style="object-fit: cover;" src="https://res.cloudinary.com/shybold/image/upload/v1656014926/31a5f800-0a92-47bf-82a9-77c89017f21b_zgidz8.png" alt="...">
+                                {% else %}
+                                <img src="{{ profile.image.url }}" alt="profile image">
+                                {% endif %}
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ profile.user.username }}</h5>
+                                    <a href="" class="btn btn-small">follow</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+
+                    {% if blog_results %}
+                        {% for blog in blog_results %}
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-12">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{ blog.title }}</h5>
+                                        <a href="" class="btn btn-small">Read Blog</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    {% endif %}
+
+                    {% if ngo_results %}
+                        {% for ngo in ngo_results %}
+                        <li>{{ ngo.name }} - {{ ngo.description }} - Focus Areas:
+                            {% for focus_area in ngo.areas_of_focus.all %}
+                            {{ focus_area.name }}{% if not forloop.last %}, {% endif %}
+                            {% endfor %}
+                        </li>
+                        {% endfor %}
+                    {% endif %}
+
+                    {% if not profile_results and not blog_results and not ngo_results %}
+                    <p>No results found.</p>
+                    {% endif %}
                 </div>
+                {% else %}
+
+                <div class="col-12 col-md-8 bg-info">
+                    Level 2: .col-8 .col-sm-6 gggg
+                </div>
+                {% endif %}
                 <div class="col-sm-4 d-none d-md-block bg-warning">
                     Level 2: .col-4 .col-sm-6
                 </div>
@@ -21,4 +78,10 @@
         </div>
     </div>
 </section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.getElementById("copyright").innerHTML = new Date().getFullYear();
+</script>
 {% endblock %}
