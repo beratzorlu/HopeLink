@@ -8,7 +8,8 @@
     <div class="text-holder">
         <h1 class="display-4 heading">HopeLink</h1>
         <br>
-        <p>We believe that positive change is possible when people come together to create a better world.
+        <p class="max-width-90">We believe that positive change is possible when people come together to create a better
+            world.
             We
             invite you to join our movement by learning about the work of NGO's, getting involved and supporting the
             causes
@@ -20,12 +21,23 @@
 </div>
 
 <!-- Our Purpose Section -->
-<section>
+<section class="max-width-90 sliding-images">
+    <div class="row">
+        <img src="../../../static/images/hugging-1.jpg" class="col-sm-6 splash-image myImages fade-in" alt="">
+        <img src="../../../static/images/evac.jpg" class="col-sm-6 splash-image myImages fade-in" alt="">
+        <h2 class="col-sm-6 heading-2">Looking for a close friend or family member?<br><a href="{% url 'blog' %}">Check
+                out our blog</a>
+        </h2>
+    </div>
+</section>
+<section class="max-width-90">
     <div>
         <p>NGO activities include, but are not limited to, environmental, social, advocacy and human rights work. They
             can work to promote social or political change on a broad scale or very locally. NGOs play a critical part
             in developing society, improving communities, and promoting citizen participation.</p>
     </div>
 </section>
+
+<script src="../../../static/js/script.js"></script>
 
 {% endblock %}

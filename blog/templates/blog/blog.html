@@ -8,7 +8,7 @@
 <div class="container h-100 text-center">
     <div class="row h-100">
         <div class="col mt-5">
-            <h1 class="text-clear home-pg-text text-center">
+            <h1 class="home-pg-text text-center title-margin" id="black">
                 Noticeboard
             </h1>
             {% if request.user|has_group:"site_admin" %}
@@ -23,11 +23,11 @@
                     <div class="col-12">
                         {% for blog in blog %}
                         <div class="card w-100 message-hl card-main-hl">
-                            <h2 class="card-title">{{ blog.title }}</h2>
+                            <h2 class="card-title card-heading-hl">{{ blog.title }}</h2>
                             <hr>
                             <p class="card-body text-left card-heading-hl">{{blog.body}}</p>
+                            <p class="text-right margin-right-hl">~ {{ blog.added_on }}</p>
                             <div class="card-footer">
-                                <p> {{ blog.added_on }}</p>
                                 <small class="ml-3">
                                     <a class="btn btn-info left" href="#">Edit</a>
                                     <a class="btn btn-danger right" href="#">Delete</a>
