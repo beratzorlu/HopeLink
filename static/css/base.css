@@ -24,6 +24,15 @@ body {
 }
 
 
+.max-width-90 {
+    max-width: 90%;
+    margin: auto;
+}
+
+#black {
+    color: black;
+}
+
 /* Navbar */
 
 nav {
@@ -61,7 +70,6 @@ footer {
 }
 
 .jumbotron {
-    margin: 20px;
     text-align: center;
     background: url("/static/images/group.jpg") no-repeat center center;
     background-size: cover;
@@ -73,7 +81,8 @@ p {
 }
 
 .text-holder {
-    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
     width: fit-content;
     height: fit-content;
     padding: 20px;
@@ -84,6 +93,33 @@ p {
     background-color: #284b63;
     border-color: #284b63;
 }
+
+.splash-image {
+    border-radius: 40px;
+    max-height: 500px;
+}
+
+.heading-2 {
+    text-align: center;
+    margin: auto;
+    min-width: 50%;
+}
+
+.sliding-images {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.fade-in {
+    animation: fadeIn 7s;
+}
+
+@keyframes fadeIn {
+    0%,100% {opacity: 0;}
+    50% {opacity: 1;}
+}
+
+/* Blog page */
 
 .card-heading-hl {
     margin: 20px 0 10px 0;
@@ -128,6 +164,13 @@ p {
     transform: scale(1.15);
 }
 
+.footer-margin {
+    margin-right: 2rem;
+}
+
+.title-margin {
+    margin-bottom: 2rem;
+}
 /* ------------------------------profile and menu styling */
 .menu {
     height: 100vh;
