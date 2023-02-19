@@ -51,6 +51,56 @@ This project was created using the Github Kanban board.
 * This website was created in relation to Code Institute World NGO Day 2023 Hackathon.
 
 ## Wireframes
-* Project's wireframe was created by using Balsamiq wireframe. Site's wireframe may not be 100% due to changes made in the middle of the project.
-![Desktop balsamiq wireframe](static/images/desktop wireframe.png)
-![Iphone balsamiq wireframe](static/images/Iphone wireframe.png)
+* Project's wireframe was created by using Balsamiq wireframe. 
+Site's wireframe may not be 100% due to changes made in the middle of the project.
+![desktop](static/images/screenshot-2023-02-19-at-6-03-30-pm.jpeg)
+![iphone](static/images/iphone-wireframe.jpeg)
+
+## Header/nav
+This informs the user about HopeLink has other features such as home nav button, blog and search buttons. It has alos has a sign up/login button.
+![Homepage](static/images/homepage.png)
+
+## Bugs
+Multiple bugs were encountered during production.
+* Fixed bugs
+
+* # Technologies Used
+
+    * ## Languages Used
+        * [HTML](https://www.w3schools.com/html/)
+        * [CSS](https://www.w3schools.com/css/)
+        * [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+        * [Python](https://www.python.org/)
+
+    * ## Libraries/Framework Used
+        * [Django](https://www.djangoproject.com/)
+        * [Bootstrap](https://getbootstrap.com/)
+        * [jQuery](https://jquery.com/)
+
+
+     * ## Libraries/Module Installed
+        * cloudinary==1.29.0
+        * dj-database-url==1.0.0
+        * dj3-cloudinary-storage==0.0.6
+        * Django==3.2.15
+        * django-allauth==0.51.0
+        * django-bootstrap-datepicker-plus==4.0.0
+        * django-bootstrap4==22.2
+        * django-crispy-forms==1.14.0
+        * django-phonenumber-field==7.0.0
+        * gunicorn==20.1.0
+        * oauthlib==3.2.1
+
+    * # Deployments
+* Git and GitHub are used for version control. Python is the backend language, and can't be displayed with GitHub alone, To live preview my project,Heroku was used.
+
+* ## Heroku steps for deployment
+
+## Credits
+Craig Thomasson
+Berat Zorlu
+Rob Sizeland
+Fatima Qaiser
+Samuel Ukachukwu
+Gbemisola Ajebeku
+
