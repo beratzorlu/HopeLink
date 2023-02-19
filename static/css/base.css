@@ -108,3 +108,8 @@ p {
 .message-hl:hover {
     transform: scale(1.15);
 }
+
+.max-width-90 {
+    max-width: 90%;
+    margin: auto;
+}
