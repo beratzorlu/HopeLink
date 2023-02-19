@@ -84,6 +84,11 @@ p {
     float: right;
 }
 
+.right-hl {
+    position: inherit;
+    left: 0;
+}
+
 .margin-right-hl {
     margin-right: 10px;
 }
