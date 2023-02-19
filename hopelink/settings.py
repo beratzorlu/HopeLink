@@ -156,7 +156,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-CSRF_TRUSTED_ORIGINS=['https://hopelink.herokuapp.com/']
+CSRF_TRUSTED_ORIGINS = ['https://8000-beratzorlu-hopelink-u1b2yuyow99.ws-eu87.gitpod.io']
 
 
 # Internationalization
