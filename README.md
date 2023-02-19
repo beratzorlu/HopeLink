@@ -51,4 +51,6 @@ This project was created using the Github Kanban board.
 * This website was created in relation to Code Institute World NGO Day 2023 Hackathon.
 
 ## Wireframes
-
+* Project's wireframe was created by using Balsamiq wireframe. Site's wireframe may not be 100% due to changes made in the middle of the project.
+![Desktop balsamiq wireframe](static/images/desktop wireframe.png)
+![Iphone balsamiq wireframe](static/images/Iphone wireframe.png)
