@@ -8,9 +8,12 @@
 <div class="container h-100 text-center">
     <div class="row h-100">
         <div class="col mt-5">
-            <h1 class="home-pg-text text-center title-margin" id="black">
-                Noticeboard
-            </h1>
+            <div id="noticeboard">
+                <h1 class="home-pg-text text-center title-margin" id="black">
+                    Noticeboard
+                </h1>
+                <p>Read our latest blogs on all the work being done by different NGO's around the world!</p>
+            </div>
             {% if request.user|has_group:"site_admin" %}
             <div class="btn-margin-hl">
                 <a class="btn rounded-0 btn-success" href="{% url 'add_blog' %}">
@@ -22,7 +25,7 @@
                 <div class="row">
                     <div class="col-12">
                         {% for blog in blog %}
-                        <div class="card w-100 message-hl card-main-hl">
+                        <div class="card w-100 message-hl card-main-hl blog-post">
                             <h2 class="card-title card-heading-hl">{{ blog.title }}</h2>
                             <hr>
                             <p class="card-body text-left card-heading-hl">{{blog.body}}</p>
@@ -31,7 +34,7 @@
                             {% if request.user|has_group:"site_admin" %}
                                 <small class="ml-3">
                                     <a class="btn btn-info left" href="{% url 'edit_blog' blog.id %}">Edit</a>
-                                    <a class="btn btn-danger right" href="% url 'delete_blog' blog.id %}">Delete</a>
+                                    <a class="btn btn-danger right" href="{% url 'delete_blog' blog.id %}">Delete</a>
                                 </small>
                             {% endif %}
                             </div>
