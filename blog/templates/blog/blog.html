@@ -31,10 +31,12 @@
                             <p class="card-body text-left card-heading-hl">{{blog.body}}</p>
                             <p class="text-right margin-right-hl">~ {{ blog.added_on }}</p>
                             <div class="card-footer">
+                            {% if request.user|has_group:"site_admin" %}
                                 <small class="ml-3">
                                     <a class="btn btn-info left" href="{% url 'edit_blog' blog.id %}">Edit</a>
                                     <a class="btn btn-danger right" href="{% url 'delete_blog' blog.id %}">Delete</a>
                                 </small>
+                            {% endif %}
                             </div>
                         </div>
                         {% endfor %}
