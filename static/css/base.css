@@ -5,6 +5,15 @@ body {
     flex-direction: column;
 }
 
+.max-width-90 {
+    max-width: 90%;
+    margin: auto;
+}
+
+#black {
+    color: black;
+}
+
 /* Navbar */
 
 nav {
@@ -66,6 +75,8 @@ p {
     border-color: #284b63;
 }
 
+/* Blog page */
+
 .card-heading-hl {
     margin: 20px 0 10px 0;
     text-transform: capitalize;
@@ -109,11 +120,10 @@ p {
     transform: scale(1.15);
 }
 
-.max-width-90 {
-    max-width: 90%;
-    margin: auto;
-}
-
 .footer-margin {
     margin-right: 2rem;
+}
+
+.title-margin {
+    margin-bottom: 2rem;
 }
