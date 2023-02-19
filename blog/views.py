@@ -19,6 +19,7 @@ def blog(request):
 
     return render(request, template, context)
 
+
 @login_required
 def add_blog(request):
     """
@@ -49,3 +50,50 @@ def add_blog(request):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def edit_blog(request, blog_id):
+    """
+    view to edit blog in the db
+    """
+    # checks if user has permition to add products
+    if not request.user.groups.filter(name='site_admin').exists():
+        messages.error(request, 'Sorry, only site admin can do that.')
+        return redirect(reverse('home'))
+    blog = get_object_or_404(Blog, pk=blog_id)
+
+    if request.method == 'POST':
+        form = BlogForm(request.POST, request.FILES, instance=blog)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'item was updated')
+            return redirect(reverse('blog'))
+        else:
+            messages.error(
+                request, 'item was not updated please check the from is valid'
+            )
+    else:
+        form = BlogForm(instance=blog)
+        messages.info(request, f'You are editing {blog.title}')
+
+    template = 'blog/edit_blog.html'
+    context = {
+        'form': form,
+        'blog': blog,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def delete_blog(request, blog_id):
+    """ Delete a blog from the store """
+    if not request.user.groups.filter(name='site_admin').exists():
+        messages.error(request, 'Sorry, only store admin can do that.')
+        return redirect(reverse('home'))
+
+    blog = get_object_or_404(Blog, pk=blog_id)
+    blog.delete()
+    messages.success(request, f'{blog.title} deleted!')
+    return redirect(reverse('blog'))
