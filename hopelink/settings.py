@@ -10,6 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+# from pathlib import Path
+# import os
+# from decouple import config
 from pathlib import Path
 import os
 if os.path.isfile('env.py'):
@@ -51,6 +54,8 @@ INSTALLED_APPS = [
     'ngo',
     'cloudinary_storage',
     'cloudinary',
+    'crispy_forms',
+    'crispy_bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -67,6 +72,9 @@ SITE_ID = 1
 
 ROOT_URLCONF = 'hopelink.urls'
 
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -82,6 +90,9 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'builtins': [
+                'blog.templatetags.group_auth',
+            ]
         },
     },
 ]
@@ -130,6 +141,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+CSRF_TRUSTED_ORIGINS=['https://8000-beratzorlu-hopelink-ljylb547uem.ws-eu87.gitpod.io']
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/

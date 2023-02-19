@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="row text-center">
+            <div class="col">
+                <hr>
+                <h2>Add Blog</h2>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row overlay-white p-2">
+            <div class="col">
+                <form method="POST" class="card" action="{% url 'add_blog' %}" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <div>
+                        <a class="btn rounded-3" href="{% url 'blog' %}">Cancel</a>
+                        <button class="btn btn-success rounded-3" type="submit">Add blog</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
