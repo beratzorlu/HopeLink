@@ -1,0 +1,11 @@
+<footer class="pt-3">
+    <div class="right footer-margin">
+        <p class="copyright text-muted"><strong>HopeLink</strong> by <a href="#">Team 8</a> <span class="pl-3 ps-3">Copyright &copy; HopeLink</span> <span id="copyright"></span></p>
+    </div>
+</footer>
+
+{% block extra_js %}
+    <script>
+        document.getElementById("copyright").innerHTML = new Date().getFullYear();
+    </script>
+{% endblock %}
