@@ -29,7 +29,7 @@
                             <p> {{ blog.added_on }}</p>
                             {% if request.user|has_group:"site_admin" %}
                                 <small class="ml-3">
-                                    <a class="btn btn-black" href="#">Edit</a> 
+                                    <a class="btn" href="#">Edit</a> 
                                     <a class="btn btn-danger" href="#">Delete</a>
                                 </small>
                             {% endif %}
