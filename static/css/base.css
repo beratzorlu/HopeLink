@@ -2,12 +2,12 @@ body {
     background-color: #B4B8AB;
 }
 
-.card-title {
-    margin: 15px 0 15px 0;
+.card-heading-hl {
+    margin: 20px 0 10px 0;
     text-transform: capitalize;
 }
 
-.card {
+.card-main-hl {
     margin-bottom: 4rem;
     background-color: #F4F9E9;
 }
@@ -20,10 +20,18 @@ body {
     float: right;
 }
 
-.date-right {
+.margin-right-hl {
     margin-right: 10px;
 }
 
-.btn-margin {
+.btn-margin-hl {
     margin-bottom: 15px;
+}
+
+.message-hl {
+    transition: .5s;
+}
+
+.message-hl:hover {
+    transform: scale(1.15);
 }
