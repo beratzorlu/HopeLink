@@ -66,8 +66,45 @@ p {
     border-color: #284b63;
 }
 
+.card-heading-hl {
+    margin: 20px 0 10px 0;
+    text-transform: capitalize;
+}
+
+.card-main-hl {
+    margin-bottom: 4rem;
+    background-color: #F4F9E9;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.margin-right-hl {
+    margin-right: 10px;
+}
+
+.btn-margin-hl {
+    margin-bottom: 15px;
+}
+
+.message-hl {
+    transition: .5s;
+}
+
+.message-hl:hover {
+    transform: scale(1.15);
+}
+
 .btn-primary:hover {
     color: #fff;
     background-color: #153243;
     border-color: #153243;
+}
+.message-hl:hover {
+    transform: scale(1.15);
 }
