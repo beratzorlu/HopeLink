@@ -5,15 +5,15 @@ from cloudinary.models import CloudinaryField
 class NGO(models.Model):
     """Data base of NGO's"""
     name = models.CharField(max_length=255)
-    description = models.TextField(null=False, blank=False)
+    description = models.TextField(null=True, blank=True)
     logo = CloudinaryField('image', default='placeholder')
-    website_url = models.URLField(null=False, blank=False)
-    email = models.EmailField(null=False, blank=False)
-    phone = models.CharField(max_length=20, null=False, blank=False)
-    address = models.CharField(max_length=255, null=False, blank=False)
-    city = models.CharField(max_length=255, null=False, blank=False)
-    state = models.CharField(max_length=255, null=False, blank=False)
-    country = models.CharField(max_length=255, null=False, blank=False)
+    website_url = models.URLField(null=True, blank=True)
+    email = models.EmailField(null=True, blank=True)
+    phone = models.CharField(max_length=20, null=True, blank=True)
+    address = models.CharField(max_length=255, null=True, blank=True)
+    city = models.CharField(max_length=255, null=True, blank=True)
+    state = models.CharField(max_length=255, null=True, blank=True)
+    country = models.CharField(max_length=255, null=True, blank=True)
     areas_of_focus = models.ManyToManyField('FocusArea', blank=True)
 
     def __str__(self):
