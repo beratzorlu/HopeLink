@@ -249,6 +249,25 @@ p {
     left: 6px;
 }
 
+.img-card {
+    position: relative;
+}
+
+/* https://css-tricks.com/snippets/css/transparent-background-images/ */
+.img-card::after {
+    content: "";
+    background-image: url("/media/guitar_404.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
 /*  user follow-unfollow */
 .follow-unfollow {
     color: hsl(0, 81%, 35%)
