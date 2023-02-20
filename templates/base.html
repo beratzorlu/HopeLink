@@ -65,6 +65,7 @@
                             <a class="nav-link dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false" href="">Welcome Back {{user.username}}</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
+                                <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
                                 {% if request.user.is_superuser %}
                                 <a class="dropdown-item" href="#">Management</a>
                                 {% endif %}

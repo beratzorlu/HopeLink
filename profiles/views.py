@@ -13,14 +13,19 @@ from django.db.models import Q
 def profile(request):
     """Renders the friends list page"""
     profile = Profile.objects.get(user=request.user)
+    blogs = Blog.objects.all().order_by("-added_on")
+    ngos = NGO.objects.all().order_by('?')[:3]
     context = {
-        'profile': profile
+        'profile': profile,
+        'blogs': blogs,
+        'ngos': ngos,
     }
     template_name = 'profiles/profile.html'
     return render(request, template_name, context)
 
 
 def search(request):
+    profile = Profile.objects.get(user=request.user)
     query = request.GET.get('q')
     profile_results = []
     blog_results = []
@@ -38,8 +43,7 @@ def search(request):
 
         # Search NGO model
         ngo_query = Q(name__icontains=query) | Q(
-            description__icontains=query) | Q(
-                areas_of_focus__name__icontains=query)
+            description__icontains=query)
         ngo_results = NGO.objects.filter(ngo_query)
 
     context = {
@@ -48,5 +52,6 @@ def search(request):
         'ngo_results': ngo_results,
         'query': query,
         'from_search': True,
+        'profile': profile,
     }
     return render(request, 'profiles/profile.html', context)

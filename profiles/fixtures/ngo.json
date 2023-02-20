@@ -1,0 +1,240 @@
+[{
+    "pk": 1,
+    "model": "ngo.ngo",
+    "fields": {
+        "name": "National Women's Council of Ireland",
+        "description": "The National Women's Council of Ireland (NWCI) is the leading national women's membership organisation seeking equality between women and men.",
+        "logo": "",
+        "website_url": "https://www.nwci.ie/",
+        "email": "info@nwci.ie",
+        "phone": "+353 (0)1 679 0100",
+        "address": "100 North King Street Dublin 7",
+        "city": "Dublin",
+        "state": "Dublin",
+        "country": "Ireland",
+        "areas_of_focus": [1, 5]
+    }
+
+},
+{
+    "pk": 2,
+    "model": "ngo.ngo",
+    "fields": {
+        "name": "Irish Refugee Council",
+        "description": "The Irish Refugee Council (IRC) is a non-governmental organization dedicated to advocating for the rights of refugees, asylum seekers, and other migrants in Ireland. The IRC was established in 1992, in response to the growing need for support and advocacy for refugees and asylum seekers in Ireland. The organization's mission is to promote and protect the human rights of refugees, asylum seekers, and other migrants through advocacy, research, education, and community empowerment. The IRC provides a range of services to migrants, including legal information and advice, assistance with family reunification, support for victims of trafficking and torture, and advocacy for policy change. The IRC is also involved in research and policy development on issues related to migration and asylum in Ireland. Through research and policy analysis, the IRC aims to influence public opinion and policy decisions in order to create a more welcoming and inclusive society for migrants in Ireland. In addition to its direct services and advocacy work, the IRC is also engaged in community empowerment initiatives. These initiatives include community education programs, leadership training for refugees and asylum seekers, and the promotion of intercultural dialogue and understanding. Overall, the Irish Refugee Council plays a vital role in ensuring that the human rights of refugees, asylum seekers, and other migrants are protected and promoted in Ireland. Through its advocacy, research, and community empowerment work, the IRC is working towards a more just and inclusive society for all.",
+        "logo": "",
+        "website_url": "",
+        "email": "info@irishrefugeecouncil.ie",
+        "phone": "00 353 1 764 5062",
+        "address": "37 Killarney Street Dublin 1 D01 NX74",
+        "city": "Dublin",
+        "state": "Dublin",
+        "country": "Ireland",
+        "areas_of_focus": [1]
+    }
+},
+{
+    "pk": 3,
+    "model": "ngo.ngo",
+    "fields": {
+        "name": "Irish Cancer Society",
+        "description": "The Irish Cancer Society (ICS) is a non-profit organization dedicated to reducing the impact of cancer on individuals and families across Ireland. Founded in 1963, the ICS has been working tirelessly to ensure that everyone affected by cancer receives the support, care, and information they need. The ICS works on many fronts to achieve its mission of reducing the impact of cancer. It funds cancer research, offers information and support to those affected by cancer, advocates for better cancer policies, and provides a range of services to support people throughout their cancer journey. One of the key areas of focus for the ICS is cancer research. The organization funds research that advances our understanding of cancer, helps to develop new treatments and interventions, and improves our ability to detect and prevent cancer. The ICS also works closely with other cancer research organizations in Ireland and around the world to maximize its impact. In addition to its research efforts, the ICS provides a wide range of support services to individuals and families affected by cancer. These services include a cancer helpline, a specialist cancer nursing service, counseling services, and financial support for cancer patients and their families. The ICS also provides information on cancer prevention, early detection, and treatment options to the general public. Advocacy is another important area of focus for the ICS. The organization works to influence cancer policy at the national and international levels, advocating for increased funding for cancer research and improved access to cancer treatment and care. Overall, the Irish Cancer Society plays a critical role in the fight against cancer in Ireland. Through its research, support services, and advocacy work, the ICS is working towards a future where cancer is no longer a major public health concern in Ireland.",
+        "logo": "",
+        "website_url": "https://www.cancer.ie/",
+        "email": "supportline@irishcancer.ie",
+        "phone": "01-2310500",
+        "address": "Irish Cancer Society 43/45 Northumberland Road Dublin, D04 VX65",
+        "city": "Dublin",
+        "state": "Dublin",
+        "country": "Ireland",
+        "areas_of_focus": [1]
+    }
+},
+{
+    "pk": 4,
+    "model": "ngo.ngo",
+    "fields": {
+        "name": "Irish Red Cross",
+        "description": "The Irish Red Cross is a non-profit organization that provides humanitarian assistance to those in need in Ireland and around the world through emergency response, health and social care, and community resilience programs.",
+        "logo": "",
+        "website_url": "https://www.redcross.ie/",
+        "email": "info@redcross.ie",
+        "phone": "+353 (0) 1 642 4600",
+        "address": "16 Merrion Square Dublin 2 D02 XF85 Republic of Ireland",
+        "city": "Dublin",
+        "state": "Dublin",
+        "country": "Ireland",
+        "areas_of_focus": [1]
+    }
+},
+{
+    "pk": 5,
+    "model": "ngo.ngo",
+    "fields": {
+        "name": "Transparency International Ireland",
+        "description": "Transparency International Ireland is a non-profit organization that works to promote transparency, accountability, and integrity in Irish public and private institutions through research, advocacy, and awareness-raising.",
+        "logo": "",
+        "website_url": "https://transparency.ie/",
+        "email": "admin@transparency.ie",
+        "phone": "+353 1 554 3938",
+        "address": "Floor 2, 69 Middle Abbey Street, Dublin 1",
+        "city": "Dublin",
+        "state": "Dublin",
+        "country": "Ireland",
+        "areas_of_focus": [1]
+    }
+},
+{
+    "pk": 6,
+    "model": "ngo.ngo",
+    "fields": {
+        "name": "Amnesty International Ireland",
+        "description": "Amnesty International Ireland is a non-profit organization that advocates for human rights and works to hold governments and other actors accountable for human rights abuses through research, campaigning, and awareness-raising.",
+        "logo": "",
+        "website_url": "https://www.amnesty.ie/",
+        "email": "info@amnesty.ie",
+        "phone": "(01) 863 8300",
+        "address": "Seán MacBride House, 48 Fleet Street, Dublin 2",
+        "city": "Dublin",
+        "state": "",
+        "country": "Ireland",
+        "areas_of_focus": [1]
+    }
+},
+{
+    "pk": 7,
+    "model": "ngo.ngo",
+    "fields": {
+        "name": "The Irish Hospice Foundation",
+        "description": "The Irish Hospice Foundation is a non-profit organization that works to improve end-of-life care in Ireland through research, education, and advocacy, as well as providing support services to those affected by terminal illness.",
+        "logo": "",
+        "website_url": "https://hospicefoundation.ie/",
+        "email": "info@hospicefoundation.ie",
+        "phone": "+353 1 679 3188",
+        "address": "Morrison Chambers (Floor 4) 32 Nassau Street Dublin 2",
+        "city": "Dublin",
+        "state": "",
+        "country": "Ireland",
+        "areas_of_focus": [1]
+    }
+},
+{
+    "pk": 8,
+    "model": "ngo.ngo",
+    "fields": {
+        "name": "ActionAid Ireland",
+        "description": "ActionAid Ireland is a non-profit organization that works to fight poverty and inequality in developing countries, with a focus on women's rights, education, and humanitarian response.",
+        "logo": "",
+        "website_url": "https://actionaid.ie/",
+        "email": "info@actionaid.ie",
+        "phone": "+353 1 878 7911",
+        "address": "172 Ivy Exchange, Granby Place",
+        "city": "Dublin",
+        "state": "",
+        "country": "Ireland",
+        "areas_of_focus": [1]
+    }
+},
+{
+    "pk": 9,
+    "model": "ngo.ngo",
+    "fields": {
+        "name": "Irish Society for the Prevention of Cruelty to Animals",
+        "description": "The Irish Society for the Prevention of Cruelty to Animals (ISPCA) is Ireland's oldest and largest animal welfare organization. Established in 1949, the ISPCA works to prevent cruelty to animals, promote animal welfare, and encourage responsible pet ownership.",
+        "logo": "",
+        "website_url": "https://www.ispca.ie/",
+        "email": "info@ispca.ie",
+        "phone": "+353 (0)43 33 25035",
+        "address": "National Animal Centre, Derryglogher, Keenagh, Co. Longford, Ireland",
+        "city": "Longford",
+        "state": "",
+        "country": "Ireland",
+        "areas_of_focus": [1]
+    }
+},
+{
+    "pk": 10,
+    "model": "ngo.ngo",
+    "fields": {
+        "name": "Concern Worldwide",
+        "description": "Concern Worldwide is a global humanitarian organization dedicated to tackling poverty and suffering in some of the world's poorest countries. With more than 50 years of experience, Concern works to address the root causes of poverty and promote sustainable development.",
+        "logo": "",
+        "website_url": "https://www.concern.net/",
+        "email": "info@concern.net",
+        "phone": " 00 353 43 332 5035",
+        "address": "Derryglogher, Keenagh, Co. Longford, Ireland",
+        "city": "Dublin",
+        "state": "",
+        "country": "Ireland",
+        "areas_of_focus": [2]
+    }
+},
+{
+    "pk": 11,
+    "model": "ngo.ngo",
+    "fields": {
+        "name": "Council for International Students",
+        "description": "The Council for International Students (CIS) is a non-profit organization dedicated to promoting international education and cultural exchange. With a network of member institutions across Ireland, the CIS provides support and services to international students and helps to foster a welcoming and inclusive campus community.",
+        "logo": "",
+        "website_url": "https://www.internationalstudents.ie/",
+        "email": "info@cisireland.com",
+        "phone": "+353 (0)1 644 9742",
+        "address": "4th Floor, Jervis House, Jervis Street, Dublin 1, Ireland",
+        "city": "Dublin",
+        "state": "",
+        "country": "Ireland",
+        "areas_of_focus": [3]
+    }
+},
+{
+    "pk": 12,
+    "model": "ngo.ngo",
+    "fields": {
+        "name": "Irish Environmental Alliance",
+        "description": "The Irish Environmental Network is a network of individual environmental Non-Government Organisations (NGOs) that work individually and, as appropriate, jointly to protect and enhance the environment, and to place environmental issues centre stage in Ireland and internationally. The IEN works to promote the interlinked principles of environmental, social and economic sustainability. In representing the environment its Members represent a common good and not self interest. As a network, IEN is greater than the sum of its parts, with synergies developing from working together and sharing knowledge, skills, strengths and experience. The Network acts on behalf of its Members to secure core and other funding for their activities.",
+        "logo": "",
+        "website_url": "https://ien.ie/",
+        "email": "office@ien.ie",
+        "phone": " 01 8780116",
+        "address": "MACRO  Centre, 1 Green Street, Dublin 7, Ireland.",
+        "city": "Dublin",
+        "state": "Dublin",
+        "country": "Ireland",
+        "areas_of_focus": [1]
+    }
+},
+{
+    "pk": 13,
+    "model": "ngo.ngo",
+    "fields": {
+        "name": "Age Action Ireland",
+        "description": "Age Action Ireland is a non-profit organisation working to improve the quality of life for older people in Ireland.",
+        "logo": "",
+        "website_url": "https://www.ageaction.ie/",
+        "email": "info@ageaction.ie",
+        "phone": "+353 1 475 6989",
+        "address": "10 Grattan Crescent",
+        "city": "Dublin",
+        "state": "",
+        "country": "Ireland",
+        "areas_of_focus": [2, 4]
+    }
+},
+{
+    "pk": 14,
+    "model": "ngo.ngo",
+    "fields": {
+        "name": "Gay and Lesbian Equality Network (GLEN)",
+        "description": "The Gay and Lesbian Equality Network (GLEN) was an Irish non-governmental organisation that campaigned for civil marriage equality and for the rights of LGBT people in Ireland.",
+        "logo": "",
+        "website_url": "https://www.lobbying.ie/",
+        "email": "info@lobbying.ie",
+        "phone": "+353 (0)1 639 5722 ",
+        "address": "Standards in Public Office Commission | 6 Earlsfort Terrace, Dublin 2 | D02 W773 | Ireland",
+        "city": "Dublin",
+        "state": "",
+        "country": "Ireland",
+        "areas_of_focus": [3]
+    }
+}
+]
