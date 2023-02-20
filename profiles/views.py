@@ -38,8 +38,7 @@ def search(request):
 
         # Search NGO model
         ngo_query = Q(name__icontains=query) | Q(
-            description__icontains=query) | Q(
-                areas_of_focus__name__icontains=query)
+            description__icontains=query)
         ngo_results = NGO.objects.filter(ngo_query)
 
     context = {

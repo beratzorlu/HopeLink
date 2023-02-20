@@ -20,7 +20,9 @@
                         <div class="row g-0">
                             <div class="col-4">
                                 {% if placeholder in profile.image.url %}
-                                <img class="img-fluid rounded-start" style="object-fit: cover;" src="https://res.cloudinary.com/shybold/image/upload/v1656014926/31a5f800-0a92-47bf-82a9-77c89017f21b_zgidz8.png" alt="...">
+                                <img class="img-fluid rounded-start" style="object-fit: cover;"
+                                    src="https://res.cloudinary.com/shybold/image/upload/v1656014926/31a5f800-0a92-47bf-82a9-77c89017f21b_zgidz8.png"
+                                    alt="...">
                                 {% else %}
                                 <img src="{{ profile.image.url }}" alt="profile image">
                                 {% endif %}
@@ -37,28 +39,44 @@
                     {% endif %}
 
                     {% if blog_results %}
-                        {% for blog in blog_results %}
-                        <div class="card mb-3">
-                            <div class="row g-0">
-                                <div class="col-12">
-                                    <div class="card-body">
-                                        <h5 class="card-title">{{ blog.title }}</h5>
-                                        <a href="" class="btn btn-small">Read Blog</a>
-                                    </div>
+                    {% for blog in blog_results %}
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-12">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ blog.title }}</h5>
+                                    <a href="" class="btn btn-small">Read Blog</a>
                                 </div>
                             </div>
                         </div>
-                        {% endfor %}
+                    </div>
+                    {% endfor %}
                     {% endif %}
 
                     {% if ngo_results %}
-                        {% for ngo in ngo_results %}
-                        <li>{{ ngo.name }} - {{ ngo.description }} - Focus Areas:
-                            {% for focus_area in ngo.areas_of_focus.all %}
-                            {{ focus_area.name }}{% if not forloop.last %}, {% endif %}
-                            {% endfor %}
-                        </li>
-                        {% endfor %}
+                    {% for ngo in ngo_results %}
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-4">
+                                {% if placeholder in mgo.logo.url %}
+                                <img class="img-fluid rounded-start" style="object-fit: cover;"
+                                    src="https://res.cloudinary.com/shybold/image/upload/v1656014926/31a5f800-0a92-47bf-82a9-77c89017f21b_zgidz8.png"
+                                    alt="...">
+                                {% else %}
+                                <img src="{{ profile.image.url }}" alt="profile image">
+                                {% endif %}
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ ngo.name }}</h5>
+                                    {% for focus_area in ngo.areas_of_focus.all %}
+                                    {{ focus_area.name }}{% if not forloop.last %}, {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
                     {% endif %}
 
                     {% if not profile_results and not blog_results and not ngo_results %}
