@@ -156,13 +156,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-<<<<<<< HEAD
 
 CSRF_TRUSTED_ORIGINS=['https://8000-beratzorlu-hopelink-ljylb547uem.ws-eu87.gitpod.io']
 
-=======
-CSRF_TRUSTED_ORIGINS=['https://8000-beratzorlu-hopelink-u1b2yuyow99.ws-eu87.gitpod.io']
->>>>>>> 7f8e3cc64a44151dc17b4d1bc7b0ed8dc7e590bd
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
