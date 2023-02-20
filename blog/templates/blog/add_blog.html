@@ -16,15 +16,19 @@
     <div class="container">
         <div class="row overlay-white p-2">
             <div class="col">
-                <form method="POST" class="card" action="{% url 'add_blog' %}" enctype="multipart/form-data">
+                <form method="POST" class="card blog-post" action="{% url 'add_blog' %}" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form|crispy }}
                     <div>
-                        <a class="btn rounded-3" href="{% url 'blog' %}">Cancel</a>
+                        <a class="btn rounded-3 cancel-btn" href="{% url 'blog' %}">Cancel</a>
                         <button class="btn btn-success rounded-3" type="submit">Add blog</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block footer %}
+{% include 'includes/footer.html' %}
 {% endblock %}

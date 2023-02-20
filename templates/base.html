@@ -75,9 +75,9 @@
                     {% endif %}
                 </ul>
             </div>
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <form id="search-form" class="form-inline" method="get" action="{% url 'search' %}">
+                <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search" aria-label="Search">
+                <button id="submit-btn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
     </nav>
@@ -92,6 +92,17 @@
     {% endblock %}
 
     {% block postloadjs %}
+    <script>
+        const form = document.getElementById('search-form');
+        const submitBtn = document.getElementById('submit-btn');
+
+        form.addEventListener('submit', function(event) {
+            if (form.q.value.trim() === '') {
+                event.preventDefault();
+                alert('Please enter search criteria!');
+            }
+        });
+    </script>
     {% endblock %}
 
     {% block extra_js %}

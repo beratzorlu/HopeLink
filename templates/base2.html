@@ -43,6 +43,17 @@
     <script>
         document.getElementById("copy-right").innerHTML = new Date().getFullYear();
     </script>
+    <script>
+        const form = document.getElementById('search-form');
+        const submitBtn = document.getElementById('submit-btn');
+
+        form.addEventListener('submit', function(event) {
+            if (form.q.value.trim() === '') {
+                event.preventDefault();
+                alert('Please enter search criteria!');
+            }
+        });
+    </script>
     {% endblock %}
 
 </body>
