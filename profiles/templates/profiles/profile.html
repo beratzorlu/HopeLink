@@ -9,27 +9,27 @@
         <div class="col-sm-3 d-none d-md-block menu bg-light">
             {% include 'includes/menu.html' %}
         </div>
-        <div class="col-sm-12 col-md-9 article-box bg-dark">
+        <div class="col-sm-12 col-md-9 article-box">
             <div class="row">
                 {% if from_search %}
                 <div class="col-12 col-md-8 bg-info">
                     <h5 class="mt-4">Search Results for "{{ query }}"</h5>
                     {% if profile_results %}
-                    {% for profile in profile_results %}
+                    {% for profile_result in profile_results %}
                     <div class="card mb-3">
                         <div class="row g-0">
-                            <div class="col-4">
-                                {% if placeholder in profile.image.url %}
+                            <div class="col-4 img-card">
+                                {% if placeholder in profile_result.image.url %}
                                 <img class="img-fluid rounded-start" style="object-fit: cover;"
                                     src="https://res.cloudinary.com/shybold/image/upload/v1656014926/31a5f800-0a92-47bf-82a9-77c89017f21b_zgidz8.png"
-                                    alt="...">
+                                    alt="..." style="width:100%;">
                                 {% else %}
-                                <img src="{{ profile.image.url }}" alt="profile image">
+                                <img src="{{ profile_result.image.url }}" alt="profile image" style="width:100%;">
                                 {% endif %}
                             </div>
                             <div class="col-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">{{ profile.user.username }}</h5>
+                                    <h5 class="card-title">{{ profile_result.user.username }}</h5>
                                     <a href="" class="btn btn-small">follow</a>
                                 </div>
                             </div>
@@ -57,13 +57,13 @@
                     {% for ngo in ngo_results %}
                     <div class="card mb-3">
                         <div class="row g-0">
-                            <div class="col-4">
-                                {% if placeholder in mgo.logo.url %}
+                            <div class="col-4 img-card">
+                                {% if placeholder in ngo.logo.url %}
                                 <img class="img-fluid rounded-start" style="object-fit: cover;"
                                     src="https://res.cloudinary.com/shybold/image/upload/v1656014926/31a5f800-0a92-47bf-82a9-77c89017f21b_zgidz8.png"
-                                    alt="...">
+                                    alt="profile image not found" style="width:100%;">
                                 {% else %}
-                                <img src="{{ profile.image.url }}" alt="profile image">
+                                <img src="{{ ngo.logo.url }}" alt="profile image" style="width:100%;">
                                 {% endif %}
                             </div>
                             <div class="col-8">
@@ -85,12 +85,37 @@
                 </div>
                 {% else %}
 
-                <div class="col-12 col-md-8 bg-info">
-                    Level 2: .col-8 .col-sm-6 gggg
+                <div class="col-12 col-md-8 pt-4">
+                    {% for blog in blogs %}
+
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h5 class="card-title"> {{blog}}</h5>
+                            <p class="card-text fs-6">{{ blog.body|truncatechars:225 }}</p>
+                            <a href="#" class="btn btn-primary">Continue Reading</a>
+                        </div>
+                    </div>
+                    {% endfor %}
                 </div>
                 {% endif %}
-                <div class="col-sm-4 d-none d-md-block bg-warning">
-                    Level 2: .col-4 .col-sm-6
+                <div class="col-sm-4 d-none d-md-block pt-4">
+                    {% for ngo in ngos %}
+                    <div class="card mb-3 bg-info">
+                        <div class="card-body">
+                            <h5 class="card-title"> {{ngo.name}}</h5>
+                            <p class="card-text fs-6">{{ ngo.description|truncatechars:225 }}</p>
+                            <a href="#" class="btn btn-primary">Continue Reading</a>
+                        </div>
+
+                        <div class="card-footer bg-transparent border-success">
+                            {% if ngo.phone %}
+                            <p class="fs-6">{{ngo.phone}}</p>
+                            <p class="fs-6">{{ngo.address}}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+
                 </div>
             </div>
         </div>
