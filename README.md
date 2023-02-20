@@ -28,9 +28,6 @@
 This project was created using the Github Kanban board.
 ![agile methodology, Kanban board](static/images/kanbanboard.png)
 
-## Color Scheme 
-
-## Fonts Used
 
 ## User Stories
         * As a site user I would like to have an option that, if I'm logged in, so there will be an option for a logout.
@@ -65,6 +62,8 @@ Multiple bugs were encountered during production.
 * Fixed bugs
 
 * # Technologies Used
+    * ## custom template tags
+        * custome template tags were created to filter for site_admin groups to edit the blog post.
 
     * ## Languages Used
         * [HTML](https://www.w3schools.com/html/)
@@ -92,7 +91,7 @@ Multiple bugs were encountered during production.
         * oauthlib==3.2.1
 
     * # Deployments
-* Git and GitHub are used for version control. Python is the backend language, and can't be displayed with GitHub alone, To live preview my project,Heroku was used.
+* Git and GitHub are used for version control. Python is the backend language, and can't be displayed with GitHub alone, To live preview my project,Heroku and cloudinary was used.
 
 * ## Heroku steps for deployment
 
