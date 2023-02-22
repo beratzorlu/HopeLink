@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from .views import handler404
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
@@ -25,4 +26,6 @@ urlpatterns = [
     path('ngo/', include('ngo.urls')),
     path('profiles/', include('profiles.urls')),
     path('accounts/', include('allauth.urls')),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler404 = 'hopelink.views.handler404'

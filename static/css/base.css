@@ -249,29 +249,28 @@ p {
     left: 6px;
 }
 
-.img-card {
+.error-page {
     position: relative;
+    height: 100vh;
 }
 
 /* https://css-tricks.com/snippets/css/transparent-background-images/ */
-.img-card::after {
+.error-page::after {
     content: "";
-    background-image: url("/media/guitar_404.jpg");
-    background-position: center;
+    background-image: url("../media/grummpy.png");
+    /* background-position: center; */
+    background-position-y: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     opacity: 0.8;
     top: 0;
     left: 0;
-    bottom: 0;
+    bottom: 15%;
     right: 0;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
 }
-/*  user follow-unfollow */
-.follow-unfollow {
-    color: hsl(0, 81%, 35%)
-}
+
 
 /* ---------------media styling for screen size mobile  */
 
